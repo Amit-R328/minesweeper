@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minesweeper</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body onload="initGame()">
+    <div class="smiley" onclick="restart()"></div>
+    <div>
+        <div class="lives"></div>
+        <div class="difficulty">
+            <button onclick="changeDifficulty(0)">easy</button>
+            <button onclick="changeDifficulty(1)">hard</button>
+            <button onclick="changeDifficulty(2)">extreme</button>
+        </div>
+        <div class="hints"></div>
+        <div class="timer"></div>
+    </div>
+    <div class="board"></div>
+    <script src="main.js"></script>
+    <script src="util.js"></script>
+</body>
+</html>
