@@ -1,5 +1,5 @@
 body{
-    background-image: url(images/background.jpg);
+    background-image: url(images/MineSweeper.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size:cover;
@@ -50,4 +50,8 @@ button:hover {
 button:active {
 	position:relative;
 	top:1px;
+}
+
+.spent{
+	display: none
 }

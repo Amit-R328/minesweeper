@@ -7,16 +7,16 @@
     <title>minesweeper</title>
     <link rel="stylesheet" href="main.css">
 </head>
-<body onload="initGame()">
+<body onload="initGame(0)">
     <div class="smiley" onclick="restart()"></div>
     <div>
         <div class="lives"></div>
         <div class="difficulty">
-            <button onclick="changeDifficulty(0)">easy</button>
-            <button onclick="changeDifficulty(1)">hard</button>
-            <button onclick="changeDifficulty(2)">extreme</button>
+            <button onclick="initGame(0)">easy</button>
+            <button onclick="initGame(1)">hard</button>
+            <button onclick="initGame(2)">extreme</button>
         </div>
-        <div class="hints"></div>
+        <div class="hints" onclick="onHint()"></div>
         <div class="timer"></div>
     </div>
     <div class="board"></div>
